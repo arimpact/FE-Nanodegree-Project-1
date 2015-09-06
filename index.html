@@ -67,113 +67,143 @@
 	<title>Project 1</title>
 </head>
 <body>
-	<div class="container">
-		<div class="row wrap">
-			<div class="col-xs-3">
-				<img class="img-responsive logosmall" src="images/logo.jpg" alt="logo">
-			</div>
-			<div class="col-xs-9 text-right text-uppercase">
-				<h1 class="text-thin">Steve Huang</h1>
-				<h3 class="front">Front-End Ninja</h3>
-			</div>
-		</div>
-		<hr>
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="figure" >
-					<img class="img-responsive" src="images/lion.jpg" srcset="images/lion-small.jpg 800w, images/lion-medium.jpg 1100w" sizes="100vw" alt="lion">
+	<nav id="drawer" class="dark_blue">
+	<h4 style="color:blue">Off Canvas</h4>
+	<a href="#res-foc">Resume</a>
+	<br><br>
+	<a href="https://github.com/arimpact">Gamer</a>
+	<br><br>
+	<a href="https://github.com/arimpact">TBA</a>
+	</nav>
+
+	<main>
+		<a id="menu">
+			<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+        	  <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+        	</svg>
+		</a>
+
+		<div class="container">
+			<div class="row wrap">
+				<div class="col-xs-3">
+					<img class="img-responsive logosmall" src="images/logo.jpg" alt="logo">
+				</div>
+				<div class="col-xs-9 text-right text-uppercase">
+					<h1 class="text-thin">Steve Huang</h1>
+					<h3 class="front">Developer Hopeful</h3>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Featured Work</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4 text-center">
-				<img class="img-responsive" src="images/nova.jpg" alt="Resume" data-toggle="modal" data-target="#Resume">
-				<h3>Resume</h3>
-				<a href="https://github.com/arimpact">https://github.com/arimpact</a>
-			</div>
-			<div class="col-sm-4 text-center">
-				<img class="img-responsive" src="images/nova.jpg" alt="Game" data-toggle="modal" data-target="#Game">
-				<h3>Game</h3>
-				<a href="https://github.com/arimpact">https://github.com/arimpact</a>
-			</div>
-			<div class="col-sm-4 text-center">
-				<img class="img-responsive"  src="images/nova.jpg" alt="Web" data-toggle="modal" data-target="#Web">
-				<h3>Web</h3>
-				<a href="https://github.com/arimpact" class="test">https://github.com/arimpact</a>
-			</div>
-		</div>
-		<footer>
+			<hr>
 			<div class="row">
 				<div class="col-xs-12">
-					<a href="https://www.facebook.com/steve.huang.5095" class="zocial-facebook">Facebook</a>
-					<a href="" class="zocial-google">Google</a>
-					<a href="" class="zocial-digg">Digg</a>
-					<a href="" class="zocial-twitter">Twitter</a>
+					<div class="figure" >
+						<img class="img-responsive" src="images/lion.jpg" srcset="images/lion-small.jpg 800w, images/lion-medium.jpg 1100w" sizes="100vw" alt="lion">
+					</div>
 				</div>
 			</div>
-		</footer>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Featured Work</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<img class="img-responsive" id="res-foc" src="images/nova.jpg" alt="Resume" data-toggle="modal" data-target="#Resume">
+					<h3>Resume</h3>
+					<a href="https://github.com/arimpact">https://github.com/arimpact</a>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img class="img-responsive clickable" src="images/Arcade.png" alt="Game" data-toggle="modal" data-target="#Game">
+					<h3>Game</h3>
+					<a href="https://github.com/arimpact">https://github.com/arimpact</a>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img class="img-responsive"  src="images/nova.jpg" alt="Web" data-toggle="modal" data-target="#Web">
+					<h3>Web</h3>
+					<a href="https://github.com/arimpact" class="test">https://github.com/arimpact</a>
+				</div>
+			</div>
+			<footer>
+				<div class="row">
+					<div class="col-xs-12">
+						<a href="" class="zocial-facebook">Facebook</a>
+						<a href="" class="zocial-google">Google</a>
+						<a href="https://www.linkedin.com/profile/view?id=AAkAAAEndKsBkCcmBp7aL9yUxRET7O8FaxQgSvQ&authType=NAME_SEARCH&authToken=jy5N&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A19362987%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1441261774565%2Ctas%3Asteve%20" class="zocial-linkedin">Linkedin</a>
+						<a href="" class="zocial-twitter">Twitter</a>
+					</div>
+				</div>
+			</footer>
 
-		<div class="modal fade" id="Resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">Resume Zoom!</h4>
+			<div class="modal fade" id="Resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title modal-text-center" id="myModalLabel">My Resume</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="images/nova.jpg" alt="resume">
+							<p class="modal-text-center">This is my Resume</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
-					<div class="modal-body">
-						<img class="img-responsive" src="images/nova.jpg" alt="resume">
-						<p>and stuff...</p>
+				</div>
+			</div>
+
+			<div class="modal fade" id="Game" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title modal-text-center" id="myModalLabel2">Arcade Game Project</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="images/Arcade.png" alt="game">
+							<p class="modal-text-center">This is an Arcade Game I created similar to the game Frogger</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+			<div class="modal fade" id="Web" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title modal-text-center" id="myModalLabel3">Fun Stuff</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="images/nova.jpg" alt="fun">
+							<p class="modal-text-center">and stuff...</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</main>
 
-		<div class="modal fade" id="Game" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel2">Gamer</h4>
-					</div>
-					<div class="modal-body">
-						<img class="img-responsive" src="images/nova.jpg" alt="game">
-						<p>and stuff...</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="Web" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel3">Fun Stuff</h4>
-					</div>
-					<div class="modal-body">
-						<img class="img-responsive" src="images/nova.jpg" alt="fun">
-						<p>and stuff...</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		var menu = document.querySelector('#menu');
+		var main = document.querySelector('main');
+		var drawer = document.querySelector('#drawer');
+		var res = document.querySelector('#res-focus');
+
+		menu.addEventListener('click', function(e) {
+	  		drawer.classList.toggle('open');
+	  		e.stopPropagation();
+	  	});
+
+	  	main.addEventListener('click', function() {
+        	drawer.classList.remove('open');
+      	});
+	</script>
 </body>
 </html>
 >>>>>>> master
