@@ -441,6 +441,7 @@ mark,
   text-align: left;
 }
 .text-right {
+  border: 1px solid red;
   text-align: right;
 }
 .text-center {
